@@ -1,0 +1,46 @@
+﻿<%@ master language="C#" autoeventwireup="true" codebehind="window.master.cs" inherits="Mindroute.Lemoon.Admin.Master.Window" %>
+<!doctype html>
+<!--[if lt IE 7 ]><html class="no-js ie6" lang="en"><![endif]-->
+<!--[if IE 7 ]><html class="no-js ie7" lang="en"><![endif]-->
+<!--[if IE 8 ]><html class="no-js ie8" lang="en"><![endif]-->
+<!--[if IE 9 ]><html class="no-js ie9" lang="en"><![endif]-->
+<!--[if !(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
+<head runat="server">
+  <meta charset="utf-8" />
+  <title>lemoon&reg;</title>
+  <link rel="shortcut icon" href="~/admin/favicon.ico" /> 
+  <link rel="stylesheet" href="<%= ThemeService.GetUrl("lemoon.css") %>" />
+  <style>
+    body { height: auto; }
+  </style>
+  <script src="<%= ResolveUrl("~/admin/js/modernizr-1.7.min.js") %>"></script>
+  <script src="<%= ResolveUrl("~/admin/js/jquery-1.6.min.js") %>"></script>
+  <script src="<%= ResolveUrl("~/admin/js/jquery-ui-1.8.12.custom.min.js") %>"></script>
+  <script src="<%= ResolveUrl("~/admin/js/jquery.hotkeys.js") %>"></script>  
+  <script src="<%= ResolveUrl("~/admin/js/jquery.watermark.min.js") %>"></script>    
+  <script src="<%= ResolveUrl("~/admin/js/lemoon.js") %>"></script>  
+  <asp:contentplaceholder id="head" runat="server" />
+</head>
+<body class="window" id="body" runat="server">
+  <div id="head">
+    <div id="menu">
+      <div id="top-menu">
+        <asp:contentplaceholder id="topmenu" runat="server" />
+      </div>
+    </div>
+    <div id="nav">   
+      <lemoon:tabstrip id="tabstrip" runat="server" />
+    </div>
+  </div>   
+  <div id="main">
+    <div id="outer">
+      <div id="inner">
+        <form runat="server">
+          <asp:contentplaceholder id="content" runat="server" />
+        </form>  
+        <div class="clear"></div>        
+      </div>    
+    </div>    
+  </div>
+</body>
+</html>

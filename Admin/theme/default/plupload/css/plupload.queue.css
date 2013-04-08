@@ -1,0 +1,28 @@
+/* Custom rules */
+.plupload_wrapper { font-family: 'Trebuchet MS'; font-size: 13px;}
+.plupload_header {display:none;}
+.plupload_container { padding:0;}
+.plupload_scroll .plupload_filelist {height:auto; overflow:auto;background:transparent;}
+.plupload_filelist_header {background:#98C6E8;color:#fff;font-weight:bold;font-size: 14px;padding:5px 10px;}
+.plupload_filelist_header .plupload_file_status span {color:#fff;}
+.plupload_scroll .plupload_filelist_header .plupload_file_action, .plupload_scroll .plupload_filelist_footer .plupload_file_action {margin:0;}
+.plupload_filelist .plupload_file_name {width: auto;}
+.plupload_file_size, .plupload_file_status, .plupload_progress {float: right;width: 85px;}
+.plupload_file_size, .plupload_file_status, .plupload_file_action {text-align: right; padding-right:10px;}
+.plupload_file_status {color: #999;}
+.plupload_file_action {width:12px; height:12px;margin:3px 0 0 0;padding:0;}
+.plupload_file_action * {width:12px; height:12px;}
+.plupload_filelist li {background:none;padding:5px 10px;border-bottom:1px solid #ddd;}
+.plupload_filelist li:nth-child(even) {background: #f4f4f4;}
+li.plupload_droptext {background:#f4f4f4;line-height:19px;color:#999;display:block;}
+li.plupload_uploading .plupload_file_action {background: url(../../img/loading.gif); }
+li.plupload_delete a { background: url(../../img/icons-grey-12.png); background-position: -36px -12px; }
+li.plupload_failed a { background: url(../../img/icons-grey-12.png); background-position: -48px -12px;}
+li.plupload_done a { background: url(../../img/icons-grey-12.png); background-position: -12px -36px;}
+.plupload_filelist_footer {background:transparent;color:#999;}
+.plupload_filelist_footer .plupload_file_status span {color:#999;}
+.plupload_button {display:inline;background:none;border:none; color:#1676bc; font-family: 'Trebuchet MS';font-size: 13px;padding:0;margin:0 5px 0 0;}
+.plupload_button:hover {color:#1676bc;}
+.plupload_add {background:url(../img/add.png) 0 50% no-repeat; padding-left: 16px;}
+.plupload_disabled, a.plupload_disabled:hover { color:#999; }
+.plupload_start {display:none;}

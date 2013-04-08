@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<messagebundle>
+  <msg name="title">Google Analytics</msg>
+  <msg name="username">Användarnamn</msg>
+  <msg name="password">Lösenord</msg>
+  <msg name="profileid">Webbplats</msg>
+  <msg name="visits">Besök senaste 7 dagarna</msg>
+  <msg name="top">Topp 10 mest besökta sidorna</msg>
+  <msg name="country">Besök per land senaste månaden</msg>
+  <msg name="type">Rapport</msg>
+  <msg name="error">Rapporten kunde inte laddas. Verfiera att användarnamn, lösenord samt webbplats är korrekt. Webbplatsen skall skrivas in så som den är specificerad på ditt Google Analytics konto.</msg>
+  <msg name="supplyvalues">Ange användarnamn, lösenord samt webbplats. Webbplatsen skall skrivas in så som den är specificerad på ditt Google Analytics konto.</msg>
+  <msg name="titlelabel">Widgettitel</msg>
+</messagebundle>

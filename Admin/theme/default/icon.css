@@ -1,0 +1,315 @@
+/* Icons 12x12
+--------------------------------------------------------------------------------*/
+.icon-12 { background: transparent url(img/icons-grey-12.png) no-repeat 120px 120px; display: inline-block; width: 12px; height: 12px; margin: 0 2px -1px 0; line-height:12px;}
+.icon-12.blue { background-image: url(img/icons-blue-12.png); }
+.icon-12.lightblue { background-image: url(img/icons-lightblue-12.png); }
+.icon-12.white { background-image: url(img/icons-white-12.png); }
+.icon-12.red { background-image: url(img/icons-red-12.png); }
+.icon-12.green { background-image: url(img/icons-green-12.png); }
+
+.icon-12.add { background-position: 0 0; }
+.icon-12.alert { background-position: -12px 0; }
+.icon-12.allow { background-position: -24px 0; }
+.icon-12.arrow-right { background-position: -36px 0; }
+.icon-12.blog { background-position: -48px 0; }
+.icon-12.blog-entry { background-position: -60px 0; }
+.icon-12.collapse { background-position: -72px 0; }
+.icon-12.comment { background-position: -84px 0; }
+.icon-12.content { background-position: -96px 0; }
+.icon-12.create { background-position: -108px 0; }
+
+.icon-12.daemon { background-position: 0 -12px; }
+.icon-12.dashboard { background-position: -12px -12px; }
+.icon-12.date { background-position: -24px -12px; }
+.icon-12.delete { background-position: -36px -12px; }
+.icon-12.deny { background-position: -48px -12px; }
+.icon-12.design { background-position: -60px -12px; }
+.icon-12.disable { background-position: -72px -12px; }
+.icon-12.edit { background-position: -84px -12px; }
+.icon-12.edit-alt { background-position: -96px -12px; }
+.icon-12.enable { background-position: -108px -12px; }
+
+.icon-12.expand { background-position: 0 -24px; }
+.icon-12.extension { background-position: -12px -24px; }
+.icon-12.favorite { background-position: -24px -24px; }
+.icon-12.file { background-position: -36px -24px; }
+.icon-12.folder { background-position: -48px -24px; }
+.icon-12.help { background-position: -60px -24px; }
+.icon-12.info { background-position: -72px -24px; }
+.icon-12.link { background-position: -84px -24px; }
+.icon-12.manage { background-position: -96px -24px; }
+.icon-12.move { background-position: -108px -24px; }
+
+.icon-12.none { background-position: 0 -36px; }
+.icon-12.ok { background-position: -12px -36px; }
+.icon-12.plugin { background-position: -24px -36px; }
+.icon-12.recycle-bin { background-position: -36px -36px; }
+.icon-12.remove { background-position: -48px -36px; }
+.icon-12.restore { background-position: -60px -36px; }
+.icon-12.role { background-position: -72px -36px; }
+.icon-12.search { background-position: -84px -36px; }
+.icon-12.site { background-position: -96px -36px; }
+.icon-12.sort { background-position: -108px -36px; }
+
+.icon-12.star { background-position: 0 -48px; }
+.icon-12.tag { background-position: -12px -48px; }
+.icon-12.thumbs-down { background-position: -24px -48px; }
+.icon-12.thumbs-up { background-position: -36px -48px; }
+.icon-12.time { background-position: -48px -48px; }
+.icon-12.tools { background-position: -60px -48px; }
+.icon-12.user { background-position: -72px -48px; }
+.icon-12.widget { background-position: -84px -48px; }
+.icon-12.view { background-position: -96px -48px; }
+.icon-12.view-detail { background-position: -108px -48px; }
+
+.icon-12.view-preview { background-position: 0 -60px; }
+.icon-12.view-summary { background-position: -12px -60px; }
+.icon-12.view-thumbs { background-position: -24px -60px; }
+.icon-12.permission { background-position: -36px -60px; }
+.icon-12.form { background-position: -48px -60px; }
+.icon-12.designer { background-position: -60px -60px; }
+.icon-12.feed { background-position: -72px -60px; }
+.icon-12.content-type { background-position: -84px -60px; }
+.icon-12.arrow-left { background-position: -96px -60px; }
+.icon-12.download { background-position: -108px -60px; }
+
+.icon-12.arrow-up { background-position: 0 -72px; }
+.icon-12.arrow-down { background-position: -12px -72px; }
+
+/* Icons 24x24
+--------------------------------------------------------------------------------*/
+.icon-24 { background: transparent url(img/icons-grey-24.png) no-repeat 240px 240px; display: inline-block; width: 24px; height: 24px; margin: 0 4px -2px 0; }
+.icon-24.blue { background-image: url(img/icons-blue-24.png); }
+.icon-24.lightblue { background-image: url(img/icons-lightblue-24.png); }
+.icon-24.white { background-image: url(img/icons-white-24.png); }
+.icon-24.red { background-image: url(img/icons-red-24.png); }
+.icon-24.green { background-image: url(img/icons-green-24.png); }
+
+.icon-24.add { background-position: 0 0; }
+.icon-24.alert { background-position: -24px 0; }
+.icon-24.allow { background-position: -48px 0; }
+.icon-24.arrow-right { background-position: -72px 0; }
+.icon-24.blog { background-position: -96px 0; }
+.icon-24.blog-entry { background-position: -120px 0; }
+.icon-24.collapse { background-position: -144px 0; }
+.icon-24.comment { background-position: -168px 0; }
+.icon-24.content { background-position: -192px 0; }
+.icon-24.create { background-position: -216px 0; }
+
+.icon-24.daemon { background-position: 0 -24px; }
+.icon-24.dashboard { background-position: -24px -24px; }
+.icon-24.date { background-position: -48px -24px; }
+.icon-24.delete { background-position: -72px -24px; }
+.icon-24.deny { background-position: -96px -24px; }
+.icon-24.design { background-position: -120px -24px; }
+.icon-24.disable { background-position: -144px -24px; }
+.icon-24.edit { background-position: -168px -24px; }
+.icon-24.edit-alt { background-position: -192px -24px; }
+.icon-24.enable { background-position: -216px -24px; }
+
+.icon-24.expand { background-position: 0 -48px; }
+.icon-24.extension { background-position: -24px -48px; }
+.icon-24.favorite { background-position: -48px -48px; }
+.icon-24.file { background-position: -72px -48px; }
+.icon-24.folder { background-position: -96px -48px; }
+.icon-24.help { background-position: -120px -48px; }
+.icon-24.info { background-position: -144px -48px; }
+.icon-24.link { background-position: -168px -48px; }
+.icon-24.manage { background-position: -192px -48px; }
+.icon-24.move { background-position: -216px -48px; }
+
+.icon-24.none { background-position: 0 -72px; }
+.icon-24.ok { background-position: -24px -72px; }
+.icon-24.plugin { background-position: -48px -72px; }
+.icon-24.recycle-bin { background-position: -72px -72px; }
+.icon-24.remove { background-position: -96px -72px; }
+.icon-24.restore { background-position: -120px -72px; }
+.icon-24.role { background-position: -144px -72px; }
+.icon-24.search { background-position: -168px -72px; }
+.icon-24.site { background-position: -192px -72px; }
+.icon-24.sort { background-position: -216px -72px; }
+
+.icon-24.star { background-position: 0 -96px; }
+.icon-24.tag { background-position: -24px -96px; }
+.icon-24.thumbs-down { background-position: -48px -96px; }
+.icon-24.thumbs-up { background-position: -72px -96px; }
+.icon-24.time { background-position: -96px -96px; }
+.icon-24.tools { background-position: -120px -96px; }
+.icon-24.user { background-position: -144px -96px; }
+.icon-24.widget{ background-position: -168px -96px; }
+.icon-24.view { background-position: -192px -96px; }
+.icon-24.view-detail { background-position: -216px -96px; }
+
+.icon-24.view-preview { background-position: 0 -120px; }
+.icon-24.view-summary { background-position: -24px -120px; }
+.icon-24.view-thumbs { background-position: -48px -120px; }
+.icon-24.permission { background-position: -72px -120px; }
+.icon-24.form { background-position: -96px -120px; }
+.icon-24.designer { background-position: -120px -120px; }
+.icon-24.feed { background-position: -144px -120px; }
+.icon-24.content-type { background-position: -168px -120px; }
+.icon-24.arrow-left { background-position: -192px -120px; }
+.icon-24.download { background-position: -216px -120px; }
+
+.icon-24.arrow-up { background-position: 0 -144px; }
+.icon-24.arrow-down { background-position: -24px -144px; }
+
+/* Icons 32x32
+--------------------------------------------------------------------------------*/
+.icon-32 { background: transparent url(img/icons-grey-32.png) no-repeat 320px 320px; display: inline-block; width: 32px; height: 32px; margin: 0 4px 0 0; }
+.icon-32.blue { background-image: url(img/icons-blue-32.png); }
+.icon-32.lightblue { background-image: url(img/icons-lightblue-32.png); }
+.icon-32.white { background-image: url(img/icons-white-32.png); }
+.icon-32.red { background-image: url(img/icons-red-32.png); }
+.icon-32.green { background-image: url(img/icons-green-32.png); }
+
+.icon-32.add { background-position: 0 0; }
+.icon-32.alert { background-position: -32px 0; }
+.icon-32.allow { background-position: -64px 0; }
+.icon-32.arrow-right { background-position: -96px 0; }
+.icon-32.blog { background-position: -128px 0; }
+.icon-32.blog-entry { background-position: -160px 0; }
+.icon-32.collapse { background-position: -192px 0; }
+.icon-32.comment { background-position: -224px 0; }
+.icon-32.content { background-position: -256px 0; }
+.icon-32.create { background-position: -288px 0; }
+
+.icon-32.daemon { background-position: 0 -32px; }
+.icon-32.dashboard { background-position: -32px -32px; }
+.icon-32.date { background-position: -64px -32px; }
+.icon-32.delete { background-position: -96px -32px; }
+.icon-32.deny { background-position: -128px -32px; }
+.icon-32.design { background-position: -160px -32px; }
+.icon-32.disable { background-position: -192px -32px; }
+.icon-32.edit { background-position: -224px -32px; }
+.icon-32.edit-alt { background-position: -256px -32px; }
+.icon-32.enable { background-position: -288px -32px; }
+
+.icon-32.expand { background-position: 0 -64px; }
+.icon-32.extension { background-position: -32px -64px; }
+.icon-32.favorite { background-position: -64px -64px; }
+.icon-32.file { background-position: -96px -64px; }
+.icon-32.folder { background-position: -128px -64px; }
+.icon-32.help { background-position: -160px -64px; }
+.icon-32.info { background-position: -192px -64px; }
+.icon-32.link { background-position: -224px -64px; }
+.icon-32.manage { background-position: -256px -64px; }
+.icon-32.move { background-position: -288px -64px; }
+
+.icon-32.none { background-position: 0 -96px; }
+.icon-32.ok { background-position: -32px -96px; }
+.icon-32.plugin { background-position: -64px -96px; }
+.icon-32.recycle-bin { background-position: -96px -96px; }
+.icon-32.remove { background-position: -128px -96px; }
+.icon-32.restore { background-position: -160px -96px; }
+.icon-32.role { background-position: -192px -96px; }
+.icon-32.search { background-position: -224px -96px; }
+.icon-32.site { background-position: -256px -96px; }
+.icon-32.sort { background-position: -288px -96px; }
+
+.icon-32.star { background-position: 0 -128px; }
+.icon-32.tag { background-position: -32px -128px; }
+.icon-32.thumbs-down { background-position: -64px -128px; }
+.icon-32.thumbs-up { background-position: -96px -128px; }
+.icon-32.time { background-position: -128px -128px; }
+.icon-32.tools { background-position: -160px -128px; }
+.icon-32.user { background-position: -192px -128px; }
+.icon-32.widget { background-position: -224px -128px; }
+.icon-32.view { background-position: -256px -128px; }
+.icon-32.view-detail { background-position: -288px -128px; }
+
+.icon-32.view-preview { background-position: 0 -160px; }
+.icon-32.view-summary { background-position: -32px -160px; }
+.icon-32.view-thumbs { background-position: -64px -160px; }
+.icon-32.permission { background-position: -96px -160px; }
+.icon-32.form { background-position: -128px -160px; }
+.icon-32.designer { background-position: -160px -160px; }
+.icon-32.feed { background-position: -192px -160px; }
+.icon-32.content-type { background-position: -224px -160px; }
+.icon-32.arrow-left { background-position: -256px -160px; }
+.icon-32.download { background-position: -288px -160px; }
+
+.icon-32.arrow-up { background-position: 0 -192px; }
+.icon-32.arrow-down { background-position: -32px -192px; }
+
+/* Icons 48x48
+--------------------------------------------------------------------------------*/
+.icon-48 { background: transparent url(img/icons-grey-48.png) no-repeat 480px 480px; display: inline-block; width: 48px; height: 48px; margin: 0 6px 0 0; }
+.icon-48.blue { background-image: url(img/icons-blue-48.png); }
+.icon-48.lightblue { background-image: url(img/icons-lightblue-48.png); }
+.icon-48.white { background-image: url(img/icons-white-48.png); }
+.icon-48.red { background-image: url(img/icons-red-48.png); }
+.icon-48.green { background-image: url(img/icons-green-48.png); }
+
+.icon-48.add { background-position: 0 0; }
+.icon-48.alert { background-position: -48px 0; }
+.icon-48.allow { background-position: -96px 0; }
+.icon-48.arrow-right { background-position: -144px 0; }
+.icon-48.blog { background-position: -192px 0; }
+.icon-48.blog-entry { background-position: -240px 0; }
+.icon-48.collapse { background-position: -288px 0; }
+.icon-48.comment { background-position: -336px 0; }
+.icon-48.content { background-position: -384px 0; }
+.icon-48.create { background-position: -432px 0; }
+
+.icon-48.daemon { background-position: 0 -48px; }
+.icon-48.dashboard { background-position: -48px -48px; }
+.icon-48.date { background-position: -96px -48px; }
+.icon-48.delete { background-position: -144px -48px; }
+.icon-48.deny { background-position: -192px -48px; }
+.icon-48.design { background-position: -240px -48px; }
+.icon-48.disable { background-position: -288px -48px; }
+.icon-48.edit { background-position: -336px -48px; }
+.icon-48.edit-alt { background-position: -384px -48px; }
+.icon-48.enable { background-position: -432px -48px; }
+
+.icon-48.expand { background-position: 0 -96px; }
+.icon-48.extension { background-position: -48px -96px; }
+.icon-48.favorite { background-position: -96px -96px; }
+.icon-48.file { background-position: -144px -96px; }
+.icon-48.folder { background-position: -192px -96px; }
+.icon-48.help { background-position: -240px -96px; }
+.icon-48.info { background-position: -288px -96px; }
+.icon-48.link { background-position: -336px -96px; }
+.icon-48.manage { background-position: -384px -96px; }
+.icon-48.move { background-position: -432px -96px; }
+
+.icon-48.none { background-position: 0 -144px; }
+.icon-48.ok { background-position: -48px -144px; }
+.icon-48.plugin { background-position: -96px -144px; }
+.icon-48.recycle-bin { background-position: -144px -144px; }
+.icon-48.remove { background-position: -192px -144px; }
+.icon-48.restore { background-position: -240px -144px; }
+.icon-48.role { background-position: -288px -144px; }
+.icon-48.search { background-position: -336px -144px; }
+.icon-48.site { background-position: -384px -144px; }
+.icon-48.sort { background-position: -432px -144px; }
+
+.icon-48.star { background-position: 0 -192px; }
+.icon-48.tag { background-position: -48px -192px; }
+.icon-48.thumbs-down { background-position: -96px -192px; }
+.icon-48.thumbs-up { background-position: -144px -192px; }
+.icon-48.time { background-position: -192px -192px; }
+.icon-48.tools { background-position: -240px -192px; }
+.icon-48.user { background-position: -288px -192px; }
+.icon-48.widget { background-position: -336px -192px; }
+.icon-48.view { background-position: -384px -192px; }
+.icon-48.view-detail { background-position: -432px -192px; }
+
+.icon-48.view-preview { background-position: 0 -240px; }
+.icon-48.view-summary { background-position: -48px -240px; }
+.icon-48.view-thumbs { background-position: -96px -240px; }
+.icon-48.permission { background-position: -144px -240px; }
+.icon-48.form { background-position: -192px -240px; }
+.icon-48.designer { background-position: -240px -240px; }
+.icon-48.feed { background-position: -288px -240px; }
+.icon-48.content-type { background-position: -336px -240px; }
+.icon-48.arrow-left { background-position: -384px -240px; }
+.icon-48.download { background-position: -432px -240px; }
+
+.icon-48.arrow-up { background-position: 0 -288px; }
+.icon-48.arrow-down { background-position: -48px -288px; }
+
+/* Special for help icon 
+--------------------------------------------------------------------------------*/
+.icon-24.support { margin-right:0px; }

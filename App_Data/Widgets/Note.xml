@@ -1,0 +1,60 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Module>
+  <ModulePrefs title="__msg_title__" />
+  <UserPref name="title" display_name="__msg_titlelabel__" default_value="__msg_title__" />
+  <UserPref name="height" display_name="__msg_height__" default_value="200px" />
+  <UserPref name="note" display_name="Note" />
+  <Content type="html">
+    <![CDATA[ 
+      <div style="width:100%;background-color:#f4f4f4;border-top:#bbb 1px solid;">
+        <div style="padding:10px;">
+        <textarea style="width:100%;height:200px;border:0;overflow-y:auto;background-color:#f4f4f4;" wrap="hard"></textarea>
+        </div>
+      </div>
+      
+      <div class="buttons vertical">
+        <a href="javascript:void(0);" onclick="Note__MODULE_ID__.save();" class="link">__msg_save__</a>
+      </div>
+
+      <script type="text/javascript">
+        var Note__MODULE_ID__ = {
+          jQuery: $,
+          
+          init: function() {
+          
+            var widget = new LemoonWidget.init(__MODULE_ID__);
+            $(":input[id='note']", widget.handle).parent().hide();
+
+            $("textarea", widget.handle).height(widget.getString('height'));
+            var noteValue = widget.getString('note');
+
+            if (noteValue != null && noteValue != '') {
+              noteValue = noteValue.replace(/%%/g, '\n'); // Replaces %% with line feed.
+              $("textarea", widget.handle).val(noteValue);
+            }
+            else {
+              $("textarea", widget.handle).watermark('__msg_watermark__');
+            }
+            
+            var title = widget.getString('title');
+            if (title != null && title != '') {
+              widget.setTitle(title, '');          
+            }
+          },
+          
+          save: function() {
+            var widget = new LemoonWidget.init(__MODULE_ID__);
+            var noteValue = $("textarea", widget.handle).val();
+            if (noteValue == null || noteValue == '') {
+              $("textarea", widget.handle).watermark('__msg_watermark__');
+            }
+            noteValue = noteValue.replace(/\n/g, '%%'); // Replaces line feed with %%.
+            widget.set('note', encodeURIComponent(noteValue));
+            Lemoon.ShowMessage('__msg_savemsg__', 'info', 1000);
+          }
+       };  
+       Note__MODULE_ID__.init();
+       </script>
+     ]]>
+  </Content>
+</Module>

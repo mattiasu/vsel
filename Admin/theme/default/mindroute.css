@@ -1,0 +1,139 @@
+﻿/* Meyer reset (http://meyerweb.com/eric/tools/css/reset)
+--------------------------------------------------------------------------------*/
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,font,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td{background:transparent;border:0;font-size:100%;margin:0;outline:0;padding:0;vertical-align:baseline;}
+body{line-height:1;}
+ol,ul{list-style:none;}
+blockquote,q{quotes:none;}
+blockquote:before,blockquote:after,q:before,q:after{content:none;}
+:focus{outline:0;}
+ins{text-decoration:underline;}
+del{text-decoration:line-through;}
+table{border-collapse:collapse;border-spacing:0;}
+
+/* Fluid 960 Grid System (http://www.designinfluences.com/fluid960gs)
+--------------------------------------------------------------------------------*/
+.container-12,.container-16{margin-left:4%;margin-right:4%;width:92%;}
+.grid-1,.grid-2,.grid-3,.grid-4,.grid-5,.grid-6,.grid-7,.grid-8,.grid-9,.grid-10,.grid-11,.grid-12,.grid-13,.grid-14,.grid-15,.grid-16{display:inline;float:left;margin-left:1%;margin-right:1%;}
+.container-12 .grid-3,.container-16 .grid-4{width:23%;}
+.container-12 .grid-6,.container-16 .grid-8{width:48%;}
+.container-12 .grid-9,.container-16 .grid-12{width:73%;}
+.container-12 .grid-12,.container-16 .grid-16{width:98%;}
+.container-12 .grid-1{width:6.333%;}
+.container-12 .grid-2{width:14.666%;}
+.container-12 .grid-4{width:31.333%;}
+.container-12 .grid-5{width:39.666%;}
+.container-12 .grid-7{width:56.333%;}
+.container-12 .grid-8{width:64.666%;}
+.container-12 .grid-10{width:81.333%;}
+.container-12 .grid-11{width:89.666%;}
+.container-16 .grid-1{width:4.25%;}
+.container-16 .grid-2{width:10.5%;}
+.container-16 .grid-3{width:16.75%;}
+.container-16 .grid-5{width:29.25%;}
+.container-16 .grid-6{width:35.5%;}
+.container-16 .grid-7{width:41.75%;}
+.container-16 .grid-9{width:54.25%;}
+.container-16 .grid-10{width:60.5%;}
+.container-16 .grid-11{width:66.75%;}
+.container-16 .grid-13{width:79.25%;}
+.container-16 .grid-14{width:85.5%;}
+.container-16 .grid-15{width:91.75%;}
+.alpha{margin-left:0;}
+.omega{margin-right:0;}
+.container-12 .prefix-3,.container-16 .prefix-4{padding-left:25%;}
+.container-12 .prefix-6,.container-16 .prefix-8{padding-left:50%;}
+.container-12 .prefix-9,.container-16 .prefix-12{padding-left:75%;}
+.container-12 .prefix-1{padding-left:8.333%;}
+.container-12 .prefix-2{padding-left:16.666%;}
+.container-12 .prefix-4{padding-left:33.333%;}
+.container-12 .prefix-5{padding-left:41.666%;}
+.container-12 .prefix-7{padding-left:58.333%;}
+.container-12 .prefix-8{padding-left:66.666%;}
+.container-12 .prefix-10{padding-left:83.333%;}
+.container-12 .prefix-11{padding-left:91.666%;}
+.container-16 .prefix-1{padding-left:6.25%;}
+.container-16 .prefix-2{padding-left:12.5%;}
+.container-16 .prefix-3{padding-left:18.75%;}
+.container-16 .prefix-5{padding-left:31.25%;}
+.container-16 .prefix-6{padding-left:37.5%;}
+.container-16 .prefix-7{padding-left:43.75%;}
+.container-16 .prefix-9{padding-left:56.25%;}
+.container-16 .prefix-10{padding-left:62.5%;}
+.container-16 .prefix-11{padding-left:68.75%;}
+.container-16 .prefix-13{padding-left:81.25%;}
+.container-16 .prefix-14{padding-left:87.5%;}
+.container-16 .prefix-15{padding-left:93.75%;}
+.container-12 .suffix-3,.container-16 .suffix-4{padding-right:25%;}
+.container-12 .suffix-6,.container-16 .suffix-8{padding-right:50%;}
+.container-12 .suffix-9,.container-16 .suffix-12{padding-right:75%;}
+.container-12 .suffix-1{padding-right:8.333%;}
+.container-12 .suffix-2{padding-right:16.666%;}
+.container-12 .suffix-4{padding-right:33.333%;}
+.container-12 .suffix-5{padding-right:41.666%;}
+.container-12 .suffix-7{padding-right:58.333%;}
+.container-12 .suffix-8{padding-right:66.666%;}
+.container-12 .suffix-10{padding-right:83.333%;}
+.container-12 .suffix-11{padding-right:91.666%;}
+.container-16 .suffix-1{padding-right:6.25%;}
+.container-16 .suffix-2{padding-right:16.5%;}
+.container-16 .suffix-3{padding-right:18.75%;}
+.container-16 .suffix-5{padding-right:31.25%;}
+.container-16 .suffix-6{padding-right:37.5%;}
+.container-16 .suffix-7{padding-right:43.75%;}
+.container-16 .suffix-9{padding-right:56.25%;}
+.container-16 .suffix-10{padding-right:62.5%;}
+.container-16 .suffix-11{padding-right:68.75%;}
+.container-16 .suffix-13{padding-right:81.25%;}
+.container-16 .suffix-14{padding-right:87.5%;}
+.container-16 .suffix-15{padding-right:93.75%;}
+html body * span.clear,html body * div.clear,html body * li.clear,html body * dd.clear{background:none;border:0;clear:both;display:block;float:none;font-size:0;height:0;list-style:none;margin:0;overflow:hidden;padding:0;visibility:hidden;width:0;}
+.clearfix:after{clear:both;content:'.';display:block;height:0;visibility:hidden;}
+.clearfix{display:block;}
+* html .clearfix{height:1%;}
+.box {background: #eee;margin-bottom: 2em;padding: 1.5em 1.5em 1px 1.5em;}
+
+/* Default typography 
+--------------------------------------------------------------------------------*/
+body{color:#000;font-family:Helvetica, Arial, sans-serif;line-height:1.5;}
+h1{font-size:3em;line-height:1;margin-bottom:.5em;}
+h2{font-size:2em;margin-bottom:.75em;}
+h3{font-size:1.5em;line-height:1;margin-bottom:1em;}
+h4{font-size:1.2em;line-height:1.25;margin-bottom:1.25em;}
+h5{font-size:1em;margin-bottom:1.5em;}
+h6{font-size:1em;}
+ul,ol{margin:0 1.5em 1.5em;}
+ul{list-style-type:circle;}
+ol{list-style-type:decimal;}
+li ul,li ol{margin:0 1.5em;}
+dl dd{margin-left:1.5em;}
+abbr,acronym{border-bottom:1px dotted #000;}
+address{font-style:italic;margin-top:1.5em;}
+a{color:#009;text-decoration:none;}
+a:hover{text-decoration:underline;}
+blockquote{border-left:4px solid #ccc;font-family:Georgia,'Times New Roman',serif;margin:1.5em;padding-left:1em;}
+blockquote cite{font-size:.9em;}
+em,dfn{font-style:italic;}
+pre,code{margin:1.5em 0;white-space:pre-wrap;}
+pre,code,tt{font-family:consolas, monospace;}
+tt{display:block;margin:1.5em 0;}
+sup,sub{font-size:.875em;line-height:1.875em;margin-bottom:1.875em;}
+sup{vertical-align:super;}
+sub{vertical-align:sub;}
+table{border:1px solid #bbb;margin-bottom:1.4em;width:100%;}
+th,td{padding:.2em 1em;text-align:left;}
+thead th{background:#bbb;border-bottom:2px solid #888;padding:.4em 1em .2em;}
+tbody th,tbody td{background:#fff;border-bottom:1px solid #bbb;border-top:1px solid #bbb;}
+tbody tr.alt th,tbody tr.alt td{background:#eee;}
+tfoot th,tfoot td{background:#eee;border-top:2px solid #666;}
+tfoot tr.total th,tfoot tr.total td{border-top:6px double #666;}
+tfoot tr.total th{text-transform:uppercase;}
+.small{font-size:.8em;line-height:1.875em;margin-bottom:1.875em;}
+.large{font-size:1.2em;line-height:2.5em;margin-bottom:1.25em;}
+.quiet{color:#999;}
+.highlight{background:#ffc;}
+h1,h2,h3,h4,h5,h6,dl dt,strong,dfn{font-weight:bold;}
+p,dl{margin:0 0 1.5em;}
+del,.loud{color:#000;}
+.align-left {float: left; margin-right: 1em;}
+.align-center {display: block; margin-left: auto; margin-right: auto;}
+.align-right {float: right; margin-left: 1em;}

@@ -1,0 +1,91 @@
+/* Forms
+--------------------------------------------------------------------------------*/
+legend { font-size: 16px; font-weight: bold; color: #1676bc; }
+label { font-weight: bold; color: #777; }
+.field { border-bottom: 1px solid #ddd; padding: 10px 0; height: 1%; }
+.field:after { clear: both; content: '.'; display: block; height: 0; visibility: hidden; }
+.field.required label:after { content: ' *'; }
+.field label { float: left; /*  width: 15%;*/ width: 150px; margin-right: 10px; }
+.field input, .field textarea, .field select, .field .group, .field .text { float: left; width: 62%; font-family: 'Trebuchet MS'; color: #222; }
+.field .group { width: auto; }
+.field input, .field select, .field .group, .field .text { max-width: 400px; }
+.field .text { max-width: 100%; }
+.field textarea { height: 300px; max-width: 800px; }
+.field ul { list-style: none; margin: 0; padding: 0; }
+.field.required .group label:after { content: ''; }
+.field .info { color: #777; font-size: 12px; float: left; width: 300px; margin-left: 1%; }
+.field.error { background: #a00 url(img/error-bg.png) 0 0 repeat-y; }
+.field.error .info { width: 20%; color: #fff; }
+.field .group label { float: none; margin-right: 5px; width: auto !important; font-weight: normal; color: #222; display: inline; }
+.field .group input { float: none; margin: 0; width: auto !important; }
+.field .text { width: auto; float: left; color: #777; }
+.field .radio input, .field .checkbox input { width: auto; }
+.field .checkbox label { font-weight: normal; color: #222; width:auto; max-width:400px; }
+.field .checkbox input { margin-left: 160px; }
+.field .group .checkbox input { margin-left: 0; }
+.field .group span input { margin-right: 3px; }
+.field label.primary { font-weight: bold; color: #222; }
+
+fieldset .pagesummary { background-color: #fafafa; margin-top: 10px; font-size: 12px; border-top: #ddd 1px solid; }
+fieldset .pagesummary label { color: #999; }
+fieldset .pagesummary .text { color: #999; }
+
+.field input.date { width: 100px; margin-right: 5px; }
+.field input.time { width: 50px; }
+.field span.separator { padding: 0 5px; float: left; }
+.field input.size { width: 50px; }
+.group input.size { width: 50px!important; }
+.vertical label { display: block; float: none; width: auto; }
+.vertical .field input, .vertical .field textarea, .vertical .field select { width: 98%; float: none; }
+.vertical .field .info { float: none; margin: 5px 0 0 0; }
+.vertical .buttons, .buttons.vertical { padding: 20px 0 10px 10px; }
+
+body.simple .field .info { clear: both; float: none; margin-left: 160px; padding-top: 5px; width: auto; }
+body.simple .field.error .info { color: #fff; font-weight: bold; }
+body.simple .field input, body.simple .field textarea, body.simple .field select { width: 385px; }
+body.simple .field .checkbox input { width:auto;}
+
+#crop td { border: 0; vertical-align: top; padding: 0; margin:0; }
+#crop input { float:none;}
+
+/* Edit page specific
+--------------------------------------------------------------------------------*/
+#editExtra { display: none; }
+a#more { }
+
+/* Buttons
+--------------------------------------------------------------------------------*/
+.buttons { padding: 20px 0 10px 160px; overflow:auto;}
+div.tab .buttons { padding-left: 0; }
+.buttons .checkbox { float: left; padding-top: 5px; }
+.buttons input { float: none; }
+.buttons a { display: inline-block; margin-top: 5px; }
+.buttons .break { clear: both; }
+a.button { display: block; float: left; margin: 0 7px 0 0; text-decoration: none; cursor: pointer; border: none; color: #fff; background: transparent url(img/button-right.png) no-repeat scroll top right; font-family: 'Trebuchet MS'; font-weight: bold; line-height: 21px; padding: 0 15px 0 0; }
+a.button span { background: transparent url(img/button.png) no-repeat; display: block; line-height: 21px; padding: 5px 0 5px 15px; }
+a.button.alt { background-image: url(img/button-alt-right.png); }
+a.button.alt span { background-image: url(img/button-alt.png); }
+a.link { float: left; }
+.buttons div.separator { float: left; line-height: 21px; padding-top: 5px; margin-right: 5px; }
+.buttons div.separator.last { margin: 0 5px; }
+.horizontalbutton { padding: 0; padding-left: 20px; float: left; }
+.functions a.link {float:none;}
+
+/* Watermark 
+--------------------------------------------------------------------------------*/
+.watermark { color: #999 !important; }
+
+/* Pickers */
+.field.contentpicker .icon-12 { cursor: pointer; float: left; margin: 5px 0 0 3px; }
+.field.contentpicker input[readonly] { cursor: pointer; }
+.field.contentpicker div.preview { margin: 0 0 0 160px; clear: both; }
+.field.contentpicker img { margin-top: 5px; border: 1px solid #ddd; padding: 5px; background: #eee; }
+
+.field.picker .picker-icons { float: left; }
+.field.picker .icon-12 { cursor: pointer; margin: 6px 0 0 4px; }
+.field.picker input[readonly] { cursor: pointer; }
+.field.picker div.preview { margin-left: 160px; clear: both; }
+.field.picker img { margin-top:5px; border: 1px solid #ddd; padding: 5px; background: #eee;}
+
+/* File upload */
+#uploader { float:left; width: 600px; }

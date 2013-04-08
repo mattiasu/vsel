@@ -1,0 +1,359 @@
+/* Site specific styles */
+body {
+  background: #eee;
+  color: #333;
+}
+#body {
+  background: #fff url(../img/grid-18px-masked.png) 0 0 repeat-x;
+  padding-bottom: 18px;
+}
+a:hover {
+  text-decoration: none;
+}
+img.align-left { 
+  float: left; margin-right: 1em; 
+}
+img.align-center { 
+  display: block; 
+  margin-left: auto; 
+  margin-right: auto; 
+}
+img.align-right { 
+  float: right; 
+  margin-left: 1em; 
+}
+
+/* Topnav */
+img.logo {
+  float: left;
+  margin: 18px 0;
+}
+nav {
+  overflow: hidden;
+  margin-bottom: 18px;
+}
+.topnav {
+  float: right;
+}
+.topnav .navbar-inner {
+  overflow: auto;
+}
+.navbar-search {
+  margin-top:5px;
+}
+.navbar-search .search-query {
+  margin-bottom:0;
+}
+
+.subnav {
+  clear: right;
+  float: right;
+  margin: 0;
+}
+.subnav .nav > li > a {
+  color: #0088cc;
+  padding:0;
+  margin: 10px 10px 0 10px;
+  text-shadow: none;
+}
+.subnav .nav > li > a:hover {
+  color: #005580;
+  text-decoration: none;
+}
+.subnav .nav > .active > a, .subnav .nav > .active:hover > a {
+  color: #2c2c2c;
+  background:transparent;
+}
+
+/* Sidenav */
+.nav-list > li > ul > li > a {
+  margin-right: -30px;
+}
+.nav-list > li > ul > li > ul > li > a {
+  margin-right: -45px;
+}
+
+/* Footer */
+footer {
+  border-top: 1px solid #e5e5e5;
+  margin-top: 0;
+  padding: 22px 0;
+  overflow: hidden;
+}
+footer .about {
+  float: left;
+  width: 400px;
+}
+footer .office, footer .contact {
+  float: left;
+  width: 230px;
+  margin-left: 40px;
+}
+footer .social {
+  margin-top: 7.33px;
+}
+footer .social a {
+  display: inline-block;
+  width: 41px;
+  height: 41px;
+  background: transparent url(../img/social.png) 0 0 no-repeat;
+}
+footer .social a.twitter {
+  background-position: -41px 0;
+}
+footer .social a.feed {
+  background-position: -123px 0;
+}
+.spamspan {
+  display:inline;
+  float:none;
+  margin:0;
+}
+
+/* Startpage */
+body.startpage .modules {
+  margin-bottom: 18px;
+}
+
+/* Comments */
+#comments {
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  background: #f5f5f5;
+  padding: 18px;
+  margin: 9px 0 0 0;
+  position: relative;
+}
+#comments:before {
+  content: '';
+  display: block;
+  position: absolute;
+  margin-left: -6px;
+  border-left: 6px solid transparent;
+  border-right: 6px solid transparent;
+  border-bottom: 6px solid #f5f5f5;
+  width: 0;
+  height: 0;
+  top: -6px;
+  left: 24px;
+}
+ul.comments {
+  margin-bottom: 0;
+}
+ul.comments li.comment {
+  position: relative;
+  padding-left: 89px;
+  border-color: #fff;
+  min-height: 89px;
+}
+
+ul.comments li.comment .user, ul.comments li.comment .text  {
+  margin:0 0 4px;
+}
+
+ul.comments li.comment .user img {
+  height: 80px;
+  width: 80px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  background: #fff;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.comment-form {
+  overflow:auto;
+}
+.comment-form .span3 {
+  width:230px;
+}
+#comments .actions {
+  margin-top: 9px;
+  text-align: right;
+}
+.comment-form textarea {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 100%;
+  min-height: 148px;
+}
+
+/* Form controls */
+.field .info {
+  color: #b94a48;
+  margin-bottom:9px;
+}
+.field.required label:after {
+  content: ' *';
+}
+.field.error .info {
+  color: #b94a48;
+}
+
+/* Forms created by the form designer */
+ul.form {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+ul.form li {
+  padding-bottom: 10px;
+  border: 1px solid #fff;
+  position: relative;
+  clear: both;
+  width: 90%;
+}
+ul.form li p {
+  margin: 0;
+}
+ul.form li div.group label {
+  display: inline !important;
+}
+ul.form li div.text p {
+  margin: 0 0 1.5em;
+}
+ul.form li.formtwo1 {
+  width: 45%;
+  float: left;
+  clear: left !important;
+}
+ul.form li.formtwo2 {
+  width: 45%;
+  float: left;
+  clear: none !important;
+}
+ul.form li.formthree1 {
+  width: 30%;
+  float: left;
+  clear: left !important;
+}
+ul.form li.formthree2 {
+  width: 30%;
+  float: left;
+  clear: none !important;
+}
+ul.form li.formthree3 {
+  width: 30%;
+  float: left;
+  clear: none !important;
+}
+ul.form.topLabel li label {
+  display: block;
+}
+ul.form.leftLabel li label {
+  float: left !important;
+  width: 150px !important;
+  margin-right: 10px !important;
+}
+ul.form.rightLabel li label {
+  float: left !important;
+  width: 150px !important;
+  margin-right: 10px !important;
+  text-align: right !important;
+}
+ul.form li.required label:after {
+  content: ' *';
+}
+ul.form li span.checkbox, ul.form li .group span {
+  padding-left:0;
+
+}
+ul.form li span.checkbox input, ul.form li .group span input {
+  margin: 0 0 3px 0;
+  float: none;
+}
+ul.form li span.checkbox label, ul.form li .group span label {
+  float: none;
+  display: inline !important;
+  width: auto;
+  margin-left:5px;
+}
+ul.form li input.date {
+  width: 100px;
+  margin-right: 5px;
+}
+ul.form li input.time {
+  width: 60px;
+}
+ul.form li.textboxsmall input {
+  width: 100px;
+}
+ul.form li.textboxmedium input {
+  width: 200px;
+}
+ul.form li.textboxlarge input {
+  width: 400px;
+}
+ul.form li.textboxsmall textarea {
+  width: 200px;
+  height: 100px;
+}
+ul.form li.textboxmedium textarea {
+  width: 400px;
+  height: 150px;
+}
+ul.form li.textboxlarge textarea {
+  width: 600px;
+  height: 200px;
+}
+ul.form li.selectsmall select {
+  width: 100px;
+}
+ul.form li.selectmedium select {
+  width: 200px;
+}
+ul.form li.selectlarge select {
+  width: 400px;
+}
+ul.form li.error .info {
+  color: #d00;
+}
+
+/* responsive */
+@media (max-width: 767px) {
+  body {
+    background-color: #fff;
+  }
+  .topnav, .subnav {
+    float:none;
+  }
+  .subnav {
+    clear:left;
+  }
+  .navbar-search {
+    display:none;
+  }
+  img.logo {
+    max-width: 250px;
+    margin-top:0;
+  }
+  .masthead .container {
+    padding:0;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 979px) {
+  .topnav {
+    float:none;
+  }
+  .navbar-search .search-query {
+    width: 130px;
+  }
+  img.logo {
+    max-width: 250px;
+    margin-top:0;
+  }
+}
+
+@media (max-width: 979px) {
+  .navbar .nav {
+    float: left;
+    margin: 0 10px 0 0;
+  }
+  .navbar .nav > li {
+    float: left;
+  }
+}

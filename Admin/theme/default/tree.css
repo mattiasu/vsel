@@ -1,0 +1,15 @@
+/* Tree view
+--------------------------------------------------------------------------------*/
+.tree { font-size: 12px; padding: 0; margin: 0; }
+.tree ul { margin: 0; }
+.tree li { list-style: none; padding: 1px 0; margin: 0 0 0 14px; }
+.tree a { text-decoration: none; font-size: 12px; }
+.tree a:hover .title { text-decoration: underline; }
+
+/* Icons
+--------------------------------------------------------------------------------*/
+.tree .hitarea { background: transparent url(img/icons-grey-12.png) no-repeat 120px 120px; display: inline-block; width: 12px; height: 12px; cursor: pointer; float: left; margin: 0 2px 0 -14px; position: relative; top: 2px; }
+.tree .expandable-hitarea { background-position: 0 -24px; }
+.tree .collapsable-hitarea { background-position: -72px 0; }
+.tree .icon-12 { background-position: -96px 0; }
+.tree .icon-12.loading { background-image: url(img/loading.gif); background-position: 0 0;}

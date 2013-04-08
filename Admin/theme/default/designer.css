@@ -1,0 +1,76 @@
+﻿#stage { min-height: 100px; list-style: none; margin: 0; }
+#stage li { padding: 10px; border: 1px solid #fff; position: relative; clear: both; width: 95%; }
+#stage li div.clearLabel { clear: both; }
+#stage li:hover { border: 1px dotted #000; }
+#stage li p { margin: 0; }
+#stage li div.fieldcontrol p { margin: 0 0 1.5em !important; }
+#formfields { list-style: none; margin: 10px 0 0 0; display: none; }
+#formfields li { margin: 0 5px 5px 0; border: 1px solid #ddd; width: 45%; cursor: pointer; background-color: #eee; float: left; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; -o-text-overflow: ellipsis; -ms-text-overflow: ellipsis; max-width: 150px; }
+#formfields li div { margin: 2px 5px 2px 5px; }
+#aside .tabs { overflow: auto; border-bottom: 1px solid #ddd; margin: 0; }
+#aside .tabs ul { margin: 0; }
+#aside .tabs li { overflow: hidden; white-space: nowrap; padding: 0 10px 0 0; margin: 0; }
+#aside .tabs li a { padding: 0; margin: 0; background-color: #fff; }
+#aside .tabs li.selected { margin: 0; background: none; }
+#aside .tabs li.selected a { padding: 0; margin: 0; background: none; font-size: 12px; }
+#stage .placeholder { border: 1px dotted black; height: 50px; margin: 0; padding: 0; background-color: #eee; }
+#stage .selected { background-color: #98c6e8; }
+#stage li div.tools { position: absolute; right: 2px; top: 2px; border: 1px solid #bbb; padding: 2px 0 2px 4px; display: none; background-color: #f5f5f5; }
+#stage li:hover div.tools { display: block; }
+#stage li:hover div.tools a { padding-right: 4px; }
+.leftLabel label.fieldlabel { float: left; width: 150px; margin-right: 10px; }
+.rightLabel label.fieldlabel { float: left; text-align: right; width: 150px; margin-right: 10px; }
+.leftLabel div.fieldcontainer, .rightLabel div.fieldcontainer { float: left; }
+/*
+.fieldicon {
+  background-image: url(img/fields/add.png);
+  background-repeat: no-repeat;
+  padding-left: 25px !important;
+  background-position: 5px !important;
+}
+*/
+#stage li.formtwo1 { width: 45%; float: left; clear: left !important; }
+#stage li.formtwo2 { width: 45%; float: left; clear: none !important; }
+#stage li.formthree1 { width: 30%; float: left; clear: left !important; }
+#stage li.formthree2 { width: 30%; float: left; clear: none !important; }
+#stage li.formthree3 { width: 30%; float: left; clear: none !important; }
+#stage li.textboxsmall DIV.fieldcontainer input { width: 100px; }
+#stage li.textboxmedium DIV.fieldcontainer input { width: 200px; }
+#stage li.textboxlarge DIV.fieldcontainer input { width: 400px; }
+#stage li.textboxsmall DIV.fieldcontainer textarea { width: 200px; height: 100px; font-family: Trebuchet MS; }
+#stage li.textboxmedium DIV.fieldcontainer textarea { width: 400px; height: 150px; font-family: Trebuchet MS; }
+#stage li.textboxlarge DIV.fieldcontainer textarea { width: 600px; height: 200px; font-family: Trebuchet MS; }
+#stage li.selectsmall DIV.fieldcontainer select { width: 100px !important; }
+#stage li.selectmedium DIV.fieldcontainer select { width: 200px !important; }
+#stage li.selectlarge DIV.fieldcontainer select { width: 400px !important; }
+#stage li.verticalalign DIV.fieldcontainer div { clear: both; }
+#stage li.horizontalalign DIV.fieldcontainer div { float: left; }
+#stage DIV.designeditor { width: 100%; height: 200px; border: 1px solid #bbb; }
+#stage .selected DIV.designeditor { border: 1px solid #fff; }
+#stage div.htmlfield { border: 1px dashed #888; padding: 5px; min-height: 40px; }
+#stage li div.fieldcontainer select { width: 200px; }
+#properties { display: none; margin: 10px 0 0 0; }
+#properties li { margin-bottom: 5px; }
+#properties .selectmany input { margin-right: 5px; }
+#properties .listadd, #properties a.listremove, #properties a.listsort { margin-right: 3px; }
+#properties .listname { width: 30%; }
+#properties .listvalue { width: 25%; }
+#properties .placeholder { border: 1px dotted black; height: 20px; margin: 0; padding: 0; background-color: #eee; }
+#properties select, #formsettings select { width: 90%; }
+#properties input, #formsettings input { width: 90%; }
+#properties input.checkbox, #customproperties input.checkbox { width: auto; }
+#customproperties { margin-top: 20px; padding-top: 20px; border-top: 1px solid #eee; }
+#customproperties li { margin-bottom: 5px; }
+#formsettings { margin: 10px 0 0 0; }
+
+#progress { background-image: url(img/big-loading.gif); background-position: center center; background-repeat: no-repeat; position: absolute; top: 0; left: 0; right: 0; bottom: 0; background-color: #fff; display: none; opacity: .5; filter: Alpha(Opacity=50); }
+
+.smallprogress { background-image: url(img/big-loading.gif); background-position: center center; background-repeat: no-repeat; width: 100%; height: 50px; }
+
+/*
+div.popup div.htmleditor { width: 685px; }
+*/
+div.htmleditor { width: 655px; border: #98c6e8 4px solid; padding: 8px; position: fixed; top: 120px; display: none; background-color: #fff; }
+div.htmleditor .title { border: 0px; padding: 0px; font-size: 18px; color: #888; margin-right: 20px; }
+
+.htmlpreview { width: 200px; height: 200px; overflow: hidden; border: 1px solid black; background-color: #efefef; color: #000; }

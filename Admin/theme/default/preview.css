@@ -1,0 +1,55 @@
+﻿/* Meyer reset (http://meyerweb.com/eric/tools/css/reset)
+--------------------------------------------------------------------------------*/
+.preview div, .preview span, .preview applet, .preview object, .preview iframe, .preview h1, .preview h2, .preview h3, .preview h4, .preview h5, .preview h6, .preview blockquote, .preview pre, .preview a, .preview abbr, .preview acronym, .preview address, .preview big, .preview cite, .preview code, .preview del, .preview dfn, .preview em, .preview font, .preview img, .preview small, .preview strike, .preview strong, .preview sub, .preview sup, .preview b, .preview u, .preview i, .preview center, .preview dl, .preview dt, .preview dd, .preview ol, .preview ul, .preview li, .preview fieldset, .preview label, .preview legend, .preview table, .preview caption, .preview tbody, .preview tfoot, .preview thead, .preview tr, .preview th, .preview td { background: transparent; border: 0; font-size: 100%; margin: 0; outline: 0; padding: 0; vertical-align: top; }
+.preview ol, .preview ul { list-style: none; }
+.preview blockquote, .preview q { quotes: none; }
+.preview blockquote:before, .preview blockquote:after, .preview q:before, .preview q:after { content: none; }
+.preview ins { text-decoration: underline; }
+.preview del { text-decoration: line-through; }
+.preview table { border-collapse: collapse; border-spacing: 0; }
+
+/* Default typography 
+--------------------------------------------------------------------------------*/
+.preview {color:#333;font-family: 'Trebuchet MS'; font-size: 14px; line-height:1.5;}
+.preview h1{font-size:2em;line-height:1;margin-bottom:.5em;}
+.preview h2{font-size:1.5em;margin-bottom:.75em;}
+.preview h3{font-size:1.17em;line-height:1;margin-bottom:1em;}
+.preview h4{font-size:1em;line-height:1.25;margin-bottom:1.25em;}
+.preview h5{font-size:.83em;margin-bottom:1.5em;}
+.preview h6{font-size:.75em;}
+.preview ul,.preview ol{margin:0 1.5em 1.5em;}
+.preview ul{list-style-type:circle;}
+.preview ol{list-style-type:decimal;}
+.preview li ul,.preview li ol{margin:0 1.5em;}
+.preview dl dd{margin-left:1.5em;}
+.preview abbr,.preview acronym{border-bottom:1px dotted #000;}
+.preview address{font-style:italic;margin-top:1.5em;}
+.preview a{color:#009;text-decoration:none;}
+.preview a:hover{text-decoration:underline;}
+.preview blockquote{border-left:4px solid #ccc;font-family:Georgia,'Times New Roman',serif;margin:1.5em;padding-left:1em;}
+.preview blockquote cite{font-size:.9em;}
+.preview em,.preview dfn{font-style:italic;}
+.preview pre,.preview code{margin:1.5em 0;white-space:pre-wrap;}
+.preview pre,.preview code,.preview tt{font-family:consolas, monospace;}
+.preview tt{display:block;margin:1.5em 0;}
+.preview sup,.preview sub{font-size:.875em;line-height:1.875em;margin-bottom:1.875em;}
+.preview sup{vertical-align:super;}
+.preview sub{vertical-align:sub;}
+.preview table{border:1px solid #bbb;margin-bottom:1.4em;width:100%;}
+.preview th,.preview td{padding:.2em 1em;text-align:left;}
+.preview thead th{background:#bbb;border-bottom:2px solid #888;padding:.4em 1em .2em;}
+.preview tbody th,.preview tbody td{background:#fff;border-bottom:1px solid #bbb;border-top:1px solid #bbb;}
+.preview tbody tr.alt th,.preview tbody tr.alt td{background:#eee;}
+.preview tfoot th,.preview tfoot td{background:#eee;border-top:2px solid #666;}
+.preview tfoot tr.total th,.preview tfoot tr.total td{border-top:6px double #666;}
+.preview tfoot tr.total th{text-transform:uppercase;}
+.preview .small{font-size:.8em;line-height:1.875em;margin-bottom:1.875em;}
+.preview .large{font-size:1.2em;line-height:2.5em;margin-bottom:1.25em;}
+.preview .quiet{color:#999;}
+.preview .highlight{background:#ffc;}
+.preview h1,.preview h2,.preview h3,.preview h4,.preview h5,.preview h6,.preview dl dt,.preview strong,.preview dfn{font-weight:bold;}
+.preview p,.preview dl{margin:0 0 1.5em;}
+.preview del,.preview s.loud{color:#000;}
+.preview .align-left {float: left; margin-right: 1em;}
+.preview .align-center {display: block; margin-left: auto; margin-right: auto;}
+.preview .align-right {float: right; margin-left: 1em;}

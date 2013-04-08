@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<messagebundle>
+  <msg name="title">Statistics</msg>
+  <msg name="sites">Sites</msg>
+  <msg name="pages">Pages</msg>
+  <msg name="files">Files</msg>
+  <msg name="comments">Comments</msg>
+  <msg name="users">Users</msg>
+  <msg name="roles">Roles</msg>
+</messagebundle>

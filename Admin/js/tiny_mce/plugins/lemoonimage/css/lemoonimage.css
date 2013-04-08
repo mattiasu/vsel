@@ -1,0 +1,16 @@
+﻿table { table-layout: fixed; }
+.head .buttons { overflow: auto; }
+.field div.thumb { position: absolute; top: 110px; right: 30px;}
+
+
+label.align {padding-left: 26px; background: url(../img/align-none.png) left 2px no-repeat; }
+label.align.left { background-image: url(../img/align-left.png); }
+label.align.center { background-image: url(../img/align-center.png); }
+label.align.right { background-image: url(../img/align-right.png); }
+
+.croppreview { width: 220px; overflow-x: hidden; margin: 10px 10px 0 0; }
+.cropsize { margin-top: 10px; }
+.cropsize span { margin-right: 5px; }
+.cropsize table { border: 0; width: 200px; }
+.cropsize table td { border: 0; }
+.cropSeparator { clear:both; }
