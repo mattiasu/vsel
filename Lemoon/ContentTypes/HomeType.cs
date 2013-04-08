@@ -30,23 +30,6 @@ namespace vsel.Lemoon.ContentTypes
             set;
         }
 
-        //[Persisted]
-        //[Render(Weight = 30, Name = "Second column image")]
-        //[DataType("File")]
-        //public ContentRef SecondColImage
-        //{
-        //    get;
-        //    set;
-        //}
-        //[Persisted]
-        //[Render(Weight = 40, Name = "Third column image")]
-        //[DataType("File")]
-        //public ContentRef ThirdColImage
-        //{
-        //    get;
-        //    set;
-        //}
-
         [Persisted]
         [Render(Weight = 50, Name = "Column Pages")]
         [DataType("Pages")]
@@ -55,6 +38,23 @@ namespace vsel.Lemoon.ContentTypes
             get;
             set;
         }
+
+        [Persisted]
+        [Render(Weight=60, Name="Contact title", Description="Title of the contact area")]
+        public string ContactTitle { get; set; }
+
+        [Persisted]
+        [Render(Weight = 65, Name = "Contact information")]
+        [DataType(DataType.MultilineText)]
+        public string ContactText{get;set;}
+
+        [Persisted]
+        [Render(Weight = 65, Name = "Contact information")]
+        [DataType(DataType.MultilineText)]
+        public string ContactTextResponse{get;set;}
+
+
+
 
     }
 }

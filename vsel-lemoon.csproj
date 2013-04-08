@@ -807,6 +807,9 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Strings.sv.resx</DependentUpon>
     </Compile>
+    <Compile Include="assets\Handlers\ContactHandler.ashx.cs">
+      <DependentUpon>ContactHandler.ashx</DependentUpon>
+    </Compile>
     <Compile Include="Lemoon\ContentTypes\AboutType.cs" />
     <Compile Include="Lemoon\ContentTypes\CaseType.cs" />
     <Compile Include="Lemoon\ContentTypes\HomeType.cs" />
@@ -981,7 +984,9 @@
   <ItemGroup>
     <Content Include="Lemoon\MasterPages\Vsel.Master" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Content Include="assets\Handlers\ContactHandler.ashx" />
+  </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
