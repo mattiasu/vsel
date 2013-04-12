@@ -14,7 +14,8 @@
 ----------------------------------------- */
 
 #map-canvas{height: 400px; width: 100%; overflow: hidden;}
-body form {margin: 0; height: 100%;}
+body form {margin: 0; height: 100%; display: none;}
+body #thanx {display: none;}
 html, body {height: 100%}
 
 

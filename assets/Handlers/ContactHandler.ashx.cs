@@ -19,8 +19,8 @@ namespace vsel.assets.Handlers
         public string Phone { get; set; }
     }
 
-    [WebService(Namespace = "http://tempuri.org/")]
-    [WebServiceBinding(ConformsTo = WsiProfiles.BasicProfile1_1)]
+    //[WebService(Namespace = "http://tempuri.org/")]
+    //[WebServiceBinding(ConformsTo = WsiProfiles.BasicProfile1_1)]
     public class ContactHandler : IHttpHandler, IRequiresSessionState
     {
 
@@ -31,32 +31,45 @@ namespace vsel.assets.Handlers
                 var message = new MessageCarrier()
                 {
                     Id = 0,
-                    Sender = context.Request.Params["sender"] ?? context.Request["sender"],
-                    Message = context.Request.Params["message"] ?? context.Request["message"],
-                    Phone = context.Request.Params["phone"] ?? context.Request["phone"]
+                    Sender = context.Request["sender"] ?? context.Request["sender"],
+                    Message = context.Request["message"] ?? context.Request["message"],
+                    Phone = context.Request["phone"] ?? context.Request["phone"]
                 };
 
                 if (!string.IsNullOrEmpty(message.Message) && !string.IsNullOrEmpty(message.Sender))
                 {
                     ContentService contentService = ServiceLocator.Get<ContentService>();
+                    CommentService commentService = ServiceLocator.Get<CommentService>();
+
                     HomeType startPage = contentService.Get<HomeType>("/", null, true);
 
-                    if (startPage != null)
+                    if (startPage != null && commentService != null)
                     {
-                        startPage.Comments.Add(new Mindroute.Core.Model.Comment()
+                        Mindroute.Core.Model.Comment comment = new Mindroute.Core.Model.Comment()
                         {
-                            Created = DateTime.Now,
+                            Title = message.Sender,
+                            Url = message.Phone,
+                            Body = message.Message,
                             Email = message.Sender,
-                            Body = MakeMessage(message)
-                        });
+                            Status = Mindroute.Core.Model.CommentStatus.Pending,
+                            ContentID = startPage.ID,
+                            Created = DateTime.Now,
+                            LanguageID = startPage.LanguageID
+                        };
+
+                        commentService.Insert(comment);
                     }
                 }
+
+                context.Response.StatusCode = 200;
+                context.Response.End();
             }
             catch(Exception e)
             {
                 context.Response.StatusCode = 500;
                 context.Response.StatusDescription = "Internal Server Error";
                 context.Response.ContentType = "application/json";
+                //context.Response.Write(string.Format("{error: {0}}", e.Message));
                 context.Response.End();
             }
            
@@ -64,10 +77,10 @@ namespace vsel.assets.Handlers
             
         }
 
-        private string MakeMessage(MessageCarrier carrier)
-        {
-             return string.Format("E-post: {0} <br/>Telefon: {1}<br/>Meddelande:<br/>", carrier.Sender, carrier.Phone, carrier.Message);
-        }
+        //private string MakeMessage(MessageCarrier carrier)
+        //{
+        //     return string.Format("E-post: {0} Telefon: {1} \\r Meddelande: {2}", carrier.Sender, carrier.Phone, carrier.Message);
+        //}
 
         public bool IsReusable
         {

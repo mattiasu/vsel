@@ -55,12 +55,15 @@
         <div class="row">
           <div class="nine columns">
             <%= Content.ContactText.HtmlSafe(true) %>
+            <span id="thanx">
+                <%= Content.ContactTextResponse.HtmlSafe(true) %>
+            </span>
           </div>
           <div class="three columns">
             <a id="contactBtn" class="radius button right">Kontakta oss</a>
           </div>
         </div>
-         <div class="row" id="forms" style="display:none">
+         <div class="row" id="forms">
               <hr />
              <div class="four columns">
                  <input type="text" id="email" name="e-post" title="e-post" tabindex="1" placeholder="E-post" />
@@ -95,19 +98,19 @@
                     return;
                 }
                 else {
-                    //POST
                     $.ajax({
-                        type: "POST",
+                        type: "GET",
                         url: "/assets/handlers/contacthandler.ashx",
                         contentType: "application/json; charset=utf-8",
                         dataType: "json",
                         data: {
-                            sender: $('#email').val(),
-                            phone: $('#phone').val(),
-                            message: $('#message').val()
+                            'sender': $('#email').val(),
+                            'phone': $('#phone').val(),
+                            'message': $('#message').val()
                         },
                         success: function (response) {
-                            console.info('right');
+                            console.info('ok');
+
                             //$('select', '#lbDownload').selectBox('destroy');
                             //$("#lbDownload").find('.content').empty();
                             //$("#downloadTemplate").tmpl(response).appendTo($("#lbDownload .content"));
@@ -123,8 +126,6 @@
                         }
                     });
                     return false;
-
-                    console.info('should POST');
                 }
             });
 
