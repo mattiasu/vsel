@@ -1,7 +1,0 @@
-﻿<?xml version="1.0" encoding="utf-8" ?>
-<messagebundle>
-  <msg name="title">Recent form postings</msg>
-  <msg name="records">Items per page</msg>
-  <msg name="next">Next</msg>
-  <msg name="previous">Previous</msg>
-</messagebundle>

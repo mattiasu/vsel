@@ -4,9 +4,7 @@ Src/License.config
 Src/meridiumLicense.config
 *.orig
 Web*.Config
-App_Data/Cache/
-App_Data/Index/
-App_Data/Logs/
+App_Data/
 
 #OS junk files
 [Tt]humbs.db

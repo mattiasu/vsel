@@ -1,7 +1,0 @@
-﻿<?xml version="1.0" encoding="utf-8" ?>
-<messagebundle>
-  <msg name="title">Arbetsflöde</msg>
-  <msg name="records">Antal per sida</msg>
-  <msg name="next">Nästa</msg>
-  <msg name="previous">Föregående</msg>
-</messagebundle>

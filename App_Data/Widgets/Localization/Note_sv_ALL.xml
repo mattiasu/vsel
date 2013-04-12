@@ -1,9 +1,0 @@
-﻿<?xml version="1.0" encoding="utf-8" ?>
-<messagebundle>
-  <msg name="title">Anteckningar</msg>
-  <msg name="watermark">Skriv något...</msg>
-  <msg name="save">Spara anteckning</msg>
-  <msg name="height">Höjd</msg>
-  <msg name="savemsg">Din anteckning är sparad.</msg>
-  <msg name="titlelabel">Widgettitel</msg>
-</messagebundle>

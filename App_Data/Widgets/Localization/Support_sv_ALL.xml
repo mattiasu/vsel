@@ -1,8 +1,0 @@
-﻿<?xml version="1.0" encoding="utf-8" ?>
-<messagebundle>
-  <msg name="title">Nyheter från Lemoon</msg>
-  <msg name="records">Antal per sida</msg>
-  <msg name="next">Nästa</msg>
-  <msg name="previous">Föregående</msg>
-  <msg name="readarticle">Läs artikel</msg>
-</messagebundle>

@@ -1,9 +1,0 @@
-﻿<?xml version="1.0" encoding="utf-8" ?>
-<messagebundle>
-  <msg name="title">Notes</msg>
-  <msg name="watermark">Write something...</msg>
-  <msg name="save">Save note</msg>
-  <msg name="height">Height</msg>
-  <msg name="savemsg">Your note is saved.</msg>
-  <msg name="titlelabel">Widget title</msg>
-</messagebundle>
