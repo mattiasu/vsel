@@ -17,12 +17,14 @@ namespace vsel.Lemoon.ContentTypes
         /// </summary>
         [Persisted]
         [DataType(DataType.Html)]
+        [Render(Weight=10, Name="Body", Description="Main body of page")]
         public string Body { get; set; }
 
         /// <summary>
         /// Gets or sets the Right column title.
         /// </summary>
         [Persisted]
+        [Render(Weight=20, Name="Right column title", Description="The title of the rigth column")]
         public string RightColTitle { get; set; }
 
         /// <summary>
@@ -30,15 +32,14 @@ namespace vsel.Lemoon.ContentTypes
         /// </summary>
         [Persisted]
         [DataType(DataType.MultilineText)]
+        [Render(Weight=30, Name="Address info")]
         [Layout(Height = "100px")]
         public string Address { get; set; }
 
-        /// <summary>
-        /// Gets or sets the API key used for the Map.
-        /// </summary>
         [Persisted]
-        public string GoogleMapsApiKey { get; set; }
-
+        [Render(Weight=40, Name="About us Image", Description="Image of all employees")]
+        public ContentRef AboutImage{ get; set; }
+        
 
     }
 }

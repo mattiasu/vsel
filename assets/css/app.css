@@ -13,18 +13,13 @@
    Shared Styles
 ----------------------------------------- */
 
-#map-canvas{height: 400px; width: 100%; overflow: hidden;}
-body form {margin: 0; height: 100%; display: none;}
-body #thanx {display: none;}
+body form {margin: 0; height: 100%;}
 html, body {height: 100%}
-
-
-
 
 /* -----------------------------------------
    Startpage
 ----------------------------------------- */
-
+#thanx, #forms {display: none;}
 
 
 
@@ -33,3 +28,8 @@ html, body {height: 100%}
 ----------------------------------------- */
 div span.quote {font-style:italic; margin-top: 5%; display: block;}
 
+/* -----------------------------------------
+   About
+----------------------------------------- */
+#map-canvas{height: 400px; width: 100%; overflow: hidden;}
+#map-canvas iframe {width: 100%; height: 100%; border:0}
