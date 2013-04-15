@@ -12,15 +12,15 @@ namespace vsel.Lemoon.Templates
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            var masterPage = Master;
-            if (masterPage != null)
-            {
-                var siteMaster = (masterPage as vsel.Lemoon.MasterPages.Vsel);
-                if (siteMaster != null)
-                {
-                    siteMaster.HideFooter();
-                }
-            }
+            //var masterPage = Master;
+            //if (masterPage != null)
+            //{
+            //    var siteMaster = (masterPage as vsel.Lemoon.MasterPages.Vsel);
+            //    if (siteMaster != null)
+            //    {
+            //       siteMaster.HideFooter();
+            //    }
+            //}
         }
     }
 }

@@ -13,13 +13,26 @@
    Shared Styles
 ----------------------------------------- */
 
-body form {margin: 0; height: 100%;}
+body form {margin: 0; height: 100%; font-family: 'Merriweather', serif;}
 html, body {height: 100%}
+.none {display: none;}
+ul.bare {list-style-type: none; height: 36px; line-height: 36px;}
+    ul.bare li {float:left; padding-left: 10px;}
+        ul.bare li a {height:36px; width: 36px; display: block; padding-right: 15px;}
+#fb {background: url(/assets/images/fb.png) transparent top left no-repeat;}
+#twitter {background: url(/assets/images/twitter.png) transparent top left no-repeat;}
+div.mid {height: 36px; line-height: 36px;}
+div.footerstart {padding-top: 20px;}
+div.logo {display:block; margin: 16px 0; cursor: pointer;}
+div.center {text-align:center; margin: 10px 0;}
+
+h4 {font-family: 'Merriweather', serif;}
 
 /* -----------------------------------------
    Startpage
 ----------------------------------------- */
-#thanx, #forms {display: none;}
+#forms, #ok, #link-top {display: none;}
+#loader {padding: 10px 20px 11px; display: none;}
 
 
 
@@ -32,4 +45,4 @@ div span.quote {font-style:italic; margin-top: 5%; display: block;}
    About
 ----------------------------------------- */
 #map-canvas{height: 400px; width: 100%; overflow: hidden;}
-#map-canvas iframe {width: 100%; height: 100%; border:0}
+#map-canvas iframe {width: 100%; height: 650px; border:0}

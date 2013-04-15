@@ -41,6 +41,9 @@
     <Reference Include="AjaxMin">
       <HintPath>App_Data\Lib\AjaxMin.dll</HintPath>
     </Reference>
+    <Reference Include="Antlr3.Runtime">
+      <HintPath>packages\WebGrease.1.1.0\lib\Antlr3.Runtime.dll</HintPath>
+    </Reference>
     <Reference Include="dotless.Core">
       <HintPath>App_Data\Lib\dotless.Core.dll</HintPath>
     </Reference>
@@ -49,6 +52,10 @@
     </Reference>
     <Reference Include="Jurassic">
       <HintPath>App_Data\Lib\Jurassic.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Web.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>packages\Microsoft.Web.Infrastructure.1.0.0.0\lib\net40\Microsoft.Web.Infrastructure.dll</HintPath>
     </Reference>
     <Reference Include="Mindroute.Core">
       <HintPath>App_Data\Lib\Mindroute.Core.dll</HintPath>
@@ -75,6 +82,9 @@
       <HintPath>App_Data\Lib\System.Web.Mvc.dll</HintPath>
       <Private>True</Private>
     </Reference>
+    <Reference Include="System.Web.Optimization">
+      <HintPath>packages\Microsoft.AspNet.Web.Optimization.1.0.0\lib\net40\System.Web.Optimization.dll</HintPath>
+    </Reference>
     <Reference Include="System.Web.Routing" />
     <Reference Include="System.Drawing" />
     <Reference Include="System.Web" />
@@ -85,6 +95,9 @@
     <Reference Include="System.EnterpriseServices" />
     <Reference Include="System.Web.Mobile" />
     <Reference Include="System.Xml.Linq" />
+    <Reference Include="WebGrease">
+      <HintPath>packages\WebGrease.1.1.0\lib\WebGrease.dll</HintPath>
+    </Reference>
     <Reference Include="Yahoo.Yui.Compressor">
       <HintPath>App_Data\Lib\Yahoo.Yui.Compressor.dll</HintPath>
     </Reference>
@@ -741,8 +754,9 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="assets\css\app.css" />
-    <Content Include="assets\css\foundation.css" />
     <Content Include="assets\css\foundation.min.css" />
+    <Content Include="assets\images\al.gif" />
+    <Content Include="assets\images\fb.png" />
     <Content Include="assets\images\foundation\orbit\bullets.jpg" />
     <Content Include="assets\images\foundation\orbit\left-arrow-small.png" />
     <Content Include="assets\images\foundation\orbit\left-arrow.png" />
@@ -753,8 +767,9 @@
     <Content Include="assets\images\foundation\orbit\right-arrow.png" />
     <Content Include="assets\images\foundation\orbit\rotator-black.png" />
     <Content Include="assets\images\foundation\orbit\timer-black.png" />
+    <Content Include="assets\images\twitter.png" />
     <Content Include="assets\script\app.js" />
-    <Content Include="assets\script\foundation.min.js" />
+    <Content Include="assets\script\foundation-min.js" />
     <Content Include="assets\script\jquery.js" />
     <Content Include="assets\script\modernizr.foundation.js" />
     <Content Include="js\jquery-1.7.1.js" />
@@ -791,6 +806,7 @@
     <Content Include="Web.config">
       <SubType>Designer</SubType>
     </Content>
+    <Content Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="favicon.ico" />

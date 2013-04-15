@@ -15,12 +15,14 @@
          </div>
     </div>
   </div>
+    <% if(Content.AboutImage != null){ %>
+  <div class="row">
+      <div class="twelve columns">
+        <img src="<%= Content.AboutImage.Url() %>" alt="" />
+      </div>
+  </div>
+     <%} %>
     <div id="map-canvas">
-        <iframe src="http://maps.google.com/maps?f=q&amp;source=s_q&amp;hl=sv&amp;geocode=&amp;q=Gustaf+Werners+gata+8B,+V%C3%A4stra+Fr%C3%B6lunda,+Sverige&amp;aq=0&amp;oq=Gustaf+Werners+gata+8B&amp;sll=37.996163,-95.712891&amp;sspn=58.522914,129.814453&amp;ie=UTF8&amp;hq=&amp;hnear=Gustaf+Werners+gata+8B,+421+32+V%C3%A4stra+Fr%C3%B6lunda,+Sverige&amp;t=m&amp;z=14&amp;iwloc=r0&amp;ll=57.652421,11.950106&amp;output=embed"></iframe>
+        <iframe src="https://maps.google.com/maps?f=q&amp;source=s_q&amp;hl=sv&amp;geocode=&amp;q=Gustaf+Werners+gata+8B,+V%C3%A4stra+Fr%C3%B6lunda,+Sverige&amp;aq=0&amp;oq=Gustaf+Werners+gata+8B,+&amp;sll=37.09024,-95.712891&amp;sspn=60.894251,129.814453&amp;ie=UTF8&amp;view=map&amp;cid=9305483912691742631&amp;hq=Gustaf+Werners+gata+8B,+V%C3%A4stra+Fr%C3%B6lunda,+Sverige&amp;hnear=&amp;t=m&amp;iwloc=A&amp;ll=57.652421,11.950106&amp;spn=0.006295,0.006295&amp;z=11&amp;output=embed"></iframe>
     </div>
-    <div class="row" style="text-align:center;">
-        <h1><img src="http://placehold.it/400x100&text=Logo" /></h1>
-    </div>
-</asp:Content>
-<asp:Content ID="Content3" ContentPlaceHolderID="EndOfBody" runat="server">
 </asp:Content>

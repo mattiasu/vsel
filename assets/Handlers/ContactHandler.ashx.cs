@@ -19,11 +19,10 @@ namespace vsel.assets.Handlers
         public string Phone { get; set; }
     }
 
-    //[WebService(Namespace = "http://tempuri.org/")]
-    //[WebServiceBinding(ConformsTo = WsiProfiles.BasicProfile1_1)]
+    [WebService(Namespace = "http://tempuri.org/")]
+    [WebServiceBinding(ConformsTo = WsiProfiles.BasicProfile1_1)]
     public class ContactHandler : IHttpHandler, IRequiresSessionState
     {
-
         public void ProcessRequest(HttpContext context)
         {
             try
@@ -47,8 +46,8 @@ namespace vsel.assets.Handlers
                     {
                         Mindroute.Core.Model.Comment comment = new Mindroute.Core.Model.Comment()
                         {
+                            Name = !string.IsNullOrEmpty(message.Phone) ? message.Phone : message.Sender,
                             Title = message.Sender,
-                            Url = message.Phone,
                             Body = message.Message,
                             Email = message.Sender,
                             Status = Mindroute.Core.Model.CommentStatus.Pending,
@@ -57,30 +56,24 @@ namespace vsel.assets.Handlers
                             LanguageID = startPage.LanguageID
                         };
 
-                        commentService.Insert(comment);
+                        //commentService.Insert(comment);
+                        context.Response.StatusCode = 200;
+                        context.Response.Write("{\"status\": \"done\", \"message\": \""+ startPage.ContactTextResponse + "\"}");
                     }
                 }
-
-                context.Response.StatusCode = 200;
-                context.Response.End();
             }
-            catch(Exception e)
+            catch
             {
                 context.Response.StatusCode = 500;
+                context.Response.Write("{\"status\": \"done\", \"message\": \"Hoppsan, något gick visst fel :(\"}");
                 context.Response.StatusDescription = "Internal Server Error";
+            }
+            finally
+            {
                 context.Response.ContentType = "application/json";
-                //context.Response.Write(string.Format("{error: {0}}", e.Message));
                 context.Response.End();
             }
-           
-            
-            
         }
-
-        //private string MakeMessage(MessageCarrier carrier)
-        //{
-        //     return string.Format("E-post: {0} Telefon: {1} \\r Meddelande: {2}", carrier.Sender, carrier.Phone, carrier.Message);
-        //}
 
         public bool IsReusable
         {

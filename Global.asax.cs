@@ -4,6 +4,7 @@ using System.Web.Mvc;
 using System.Web.Routing;
 using Mindroute.Core;
 using Mindroute.Lemoon.Helpers;
+using System.Web.Optimization;
 
 namespace vsel
 {
@@ -14,6 +15,18 @@ namespace vsel
         {
             BootStrapper.Start();
             RegisterRoutes(RouteTable.Routes);
+
+
+            var cssBundle = new StyleBundle("~/bundle/css");
+            cssBundle.IncludeDirectory("~/assets/css", ".css", false);
+
+            var scriptBundle = new ScriptBundle("~/bundle/js");
+            scriptBundle.Include("~/assets/script/jquery.js",
+                "~/assets/script/foundation-min.js", 
+                "~/assets/script/app.js");
+
+            BundleTable.Bundles.Add(cssBundle);
+            BundleTable.Bundles.Add(scriptBundle);
         }
 
         protected void Application_End(object sender, EventArgs e)
