@@ -1003,6 +1003,9 @@
   <ItemGroup>
     <Content Include="assets\Handlers\ContactHandler.ashx" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\PublishProfiles\desktop.pubxml" />
+  </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>

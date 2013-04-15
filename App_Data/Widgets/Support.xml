@@ -1,0 +1,121 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Module>
+  <ModulePrefs title="__msg_title__" />
+  <UserPref name="records" display_name="__msg_records__" default_value="5" />
+  <Content type="html">
+    <![CDATA[ 
+      <table class="list">
+        <colgroup>
+          <col width="*" />
+          <col width="95" />
+        </colgroup> 
+        <tbody />
+      </table>  
+      <div class="paging">
+        <a href="javascript:void(0);" class="previous">__msg_previous__</a>, <a href="javascript:void(0);" class="next">__msg_next__</a>
+      </div>
+      <script type="text/javascript">
+        var Feed__MODULE_ID__ = {
+          jQuery: $,
+          
+          init: function() {
+            var widget = new LemoonWidget.init(__MODULE_ID__);
+            var records = widget.getInt("records");            
+            this.getFeed(0, records == null ? 5 : records, "http://www.lemoon.com/news/feed");
+          },
+          
+          getFeed: function(pageIndex, pageSize, source) {
+              var widget = new LemoonWidget.init(__MODULE_ID__);
+              var module = this;
+          
+              widget.startLoading($(".list", widget.handle));
+              $(".list tbody", widget.handle).children().remove();
+                        
+              $.ajax({
+                type: "POST",
+                contentType: "application/json; charset=utf-8",
+                url: widget.baseUrl() + "admin/api/external/getfeed/?pageIndex=" + pageIndex + "&pageSize=" + pageSize + "&source=" + source,
+                dataType: "json",
+                cache: false,
+                error: function(XMLHttpRequest, textStatus, errorThrown) {
+                  widget.endLoading($(".list", widget.handle));
+                  $(".paging", widget.handle).hide();
+                  if (XMLHttpRequest.statusText.length > 0) {
+                    alert("Feed widget failed to load: " + XMLHttpRequest.statusText);
+                  }
+                },
+                success: function(data, textStatus) {
+                  if (typeof(data.Status) != "undefined" && data.Status == "error") {
+                    $(".list", widget.handle).append($("<li />").text(data.Message));
+                    $(".paging", widget.handle).hide();
+                    widget.endLoading($(".list", widget.handle));
+                  } else {
+                    var container, link, title, toggle, permalink, counter = 0;                    
+
+                    $.each(data.Items, function(i, item) { 
+                      container = $("<tr/>");
+                      toggle = $("<tr class='toggle'/>");
+                      
+                      // alt row
+                      if (counter++%2 != 0) {
+                        container.addClass("alt");
+                        toggle.addClass("alt");
+                      }
+                      
+                      title = item.Title;
+                      link = $("<a />").attr("href", "javascript:void(0);").attr("title", item.Title).text(title).click(function() {
+                        var tr = $(this).parent().parent();
+                        var hidden = tr.next().css("display") == "none";
+                        $(".list tr.toggle", widget.handle).hide();
+                        $(".list tr td", widget.handle).css("border-bottom-width", "1px");
+                        if (!hidden) {
+                          tr.next().hide();
+                        } else {
+                          tr.children("td").css("border-bottom-width","0");
+                          tr.next().show();
+                        }
+                      });
+                      container.append($("<td />").append(link));
+                      container.append($("<td />").addClass("right").text(item.DateText).attr("title", item.Date));
+                                            
+                      permalink = $("<a />").attr("href", item.Link).attr("title", item.Title).text("__msg_readarticle__").click(function() {
+                        window.open($(this).attr("href"));
+                        return false;
+                      });
+                      toggle.append($("<td />").attr("colspan", "2").html(item.Description+'<br />').append(permalink)).hide();
+                      
+                      $(".list", widget.handle).append(container).append(toggle);
+                    });
+                    
+                    // Set paging
+                    var next, prev;
+                    
+                    next = $(".next", widget.handle).unbind().removeClass("disabled");
+                    prev = $(".previous", widget.handle).unbind().removeClass("disabled");
+                   
+                    if (data.PageCount > pageIndex + 1) {
+                      next.click(function () {
+                        module.getFeed(pageIndex + 1, pageSize, source);
+                      });
+                    } else {
+                      next.addClass("disabled");
+                    }
+
+                    if (pageIndex > 0) {
+                      prev.click(function () {
+                        module.getFeed(pageIndex - 1, pageSize, source);
+                      });
+                    } else {
+                      prev.addClass("disabled");
+                    }
+                    widget.endLoading($(".list", widget.handle));
+                  }
+                }
+              });
+           }
+       };  
+       Feed__MODULE_ID__.init();
+       </script>
+     ]]>
+  </Content>
+</Module>

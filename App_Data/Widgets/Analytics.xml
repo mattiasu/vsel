@@ -1,0 +1,104 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Module>
+  <ModulePrefs title="__msg_title__" />
+  <UserPref name="title" display_name="__msg_titlelabel__" default_value="__msg_title__" />
+  <UserPref name="username" display_name="__msg_username__" required="true" />
+  <UserPref name="password" display_name="__msg_password__" datatype="password" />
+  <UserPref name="profileid" display_name="__msg_profileid__" required="true" />
+  <Content type="html">
+    <![CDATA[ 		
+      <div id="container" style="padding:5px 0 0 0">
+        <div id="my_chart"><img class="chartimg" src="" alt="My Google Chart" style="display:none"/></div>
+      </div>
+      
+      <script type="text/javascript">
+        var Recent__MODULE_ID__ = {
+          jQuery: $,
+          
+          init: function() {
+            var widget = new LemoonWidget.init(__MODULE_ID__);
+
+            if (widget.getString("username") != "" && widget.getString("profileid") != "") {              
+              width = widget.handle.width() - 10;
+              this.listPages(widget.id, width);                            
+            } else {
+              $("#container", widget.handle).text("__msg_supplyvalues__");              
+            }                                    
+            
+            var title = widget.getString('title');
+            if (title != null && title != '') {
+              widget.setTitle(title, '');          
+            }            
+          },
+                    
+          listPages: function(id, width) {
+              var widget = new LemoonWidget.init(__MODULE_ID__);
+              var module = this;
+             
+              widget.startLoading($(".list", widget.handle));
+              $(".list tbody", widget.handle).children().remove();
+              
+              $.ajax({
+                type: "POST",
+                contentType: "application/json; charset=utf-8",
+                url: widget.baseUrl() + "admin/api/analytics/getweekreport/?widgetID=" + id,
+                dataType: "json",
+                cache: false,
+                error: function(XMLHttpRequest, textStatus, errorThrown) {
+                  widget.endLoading($(".list", widget.handle));
+                  $(".paging", widget.handle).hide();
+                  
+                  if (XMLHttpRequest.statusText.length > 0) {
+                    $("#container", widget.handle).text("__msg_error__");
+                  }
+                },
+                success: function(data, textStatus) {
+                  if (data.Status == "error") {                  
+                    widget.endLoading($(".list", widget.handle));                    
+                    $("#container", widget.handle).text("__msg_error__");
+                  } else {
+                  widget.endLoading($(".list", widget.handle));                    
+                  var max = 0, min=999999;
+                  var stat = "";
+                  var days = "";                  
+                        
+                  $.each(data.Items, function(i, item) { 
+                    stat += item.Count + ","   
+                    days += item.Day + "|";
+                    
+                    if (Number(item.Count) < min) {
+                      min = item.Count
+                    }
+                    if (Number(item.Count) > max) {
+                      max = item.Count
+                    }
+                  });
+                  
+                  if(width == null){
+                    width = "200";
+                  }
+                  
+                  var chartData = {
+	                  cht: 'lc',
+                    chco: '999999',
+	                  chs: width + 'x150',
+	                  chd: 't:' + stat.substring(0,stat.length-1),
+                    chxt: 'x,y',
+                    chxl: '0:|' + days.substring(0,days.length-1) + '|1:|' + min + '|' + max + '',
+                    chtt: '__msg_visits__',
+                    chds: min + ',' + max,
+                    chm: 'B,1676bc,0,0,0'};
+                  
+                    var url = "http://chart.apis.google.com/chart?" + $.param(chartData);
+                    $(".chartimg", widget.handle).attr("src", url);
+                    $(".chartimg").show();                   
+                  }
+                }
+              });              
+           }
+       };  
+       Recent__MODULE_ID__.init();
+       </script>
+     ]]>
+  </Content>
+</Module>
