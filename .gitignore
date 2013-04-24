@@ -1,7 +1,6 @@
 #Project specific ignores
 Src/Modules/
 Src/License.config
-Src/meridiumLicense.config
 *.orig
 Web*.Config
 App_Data/Cache/
